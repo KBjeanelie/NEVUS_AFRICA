@@ -111,7 +111,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo-hibiscus.png" class="logo" alt="image not Found">
+                        <img src="assets/img/logo.jpeg" class="logo" alt="NEVUS AFRICA Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -126,10 +126,9 @@
                     
                     <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li><a href="index.html">Accueil</a></li>
-                        <li><a href="Volontariat.html">Volontariat</a></li>
-                        <li><a href="our-mission.html">Notre Mission</a></li>
-                        <li><a href="blog-3-colum.html">Blog</a></li>
-                        <li><a href="about-us.html">À propos</a></li>
+                        <li><a href="about-us.html">À propos de nous</a></li>
+                        <li><a href="blog-3-colum.html">Nos activités</a></li>
+                        <li><a href="volunteer.html">Volontariat</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -344,95 +343,44 @@
     ============================================= -->
     <div class="contact-form-area default-padding">
         <div class="container">
-            <div class="row align-center">
+            <div class="row">
                 <!-- Start Adhesion Form -->
                 <div class="col-lg-7 contact-forms">
-                    <div class="content">
-                        <div class="heading">
-                            <h3>Formulaire de demande d'adhésion</h3>
-                            <p>Rejoignez notre communauté de bénévoles et aidez les familles affectées par le naevus congénital géant</p>
+                    <h3>Formulaire de demande d'adhésion</h3>
+                    <form action="https://validthemes.net/site-template/poora/assets/mail/contact.php" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <input class="form-control" id="nom" name="nom" placeholder="Nom" type="text" required>
                         </div>
-                        <form action="https://validthemes.net/site-template/poora/assets/mail/contact.php" method="POST" class="contact-form">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="fullname" name="fullname" placeholder="Nom et Prénom" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email" type="email">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Téléphone" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="profession" name="profession" placeholder="Profession" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group comments">
-                                        <textarea class="form-control" id="reason" name="reason" placeholder="Raison de votre demande d'adhésion *"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button type="submit" name="submit" id="submit">
-                                        Soumettre ma demande <i class="fa fa-paper-plane"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Alert Message -->
-                            <div class="col-md-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- End Adhesion Form -->
-                <div class="col-lg-5 address-info">
-                    <div class="address-items">
-                        <ul>
-                            <li>
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p>
-                                    Notre adresse
-                                    <span>Alexima, NT 456678</span>
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fas fa-envelope-open"></i>
-                                <p>
-                                    Envoyez-nous un mail
-                                    <span>contact@nevusafrica.org</span>
-                                </p>
-                            </li>
-                            <li>
-                                <i class="fas fa-mobile-alt"></i>
-                                <p>
-                                    Appelez-nous
-                                    <span>+242 000 000 000</span>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
+                        <div class="form-group">
+                            <input class="form-control" id="prenom" name="prenom" placeholder="Prénom" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="numero" name="numero" placeholder="Numéro de téléphone" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="statut" name="statut" placeholder="Statut professionnel" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" id="profession" name="profession" placeholder="Profession" type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="sexe" name="sexe" required>
+                                <option value="">Sélectionnez votre sexe</option>
+                                <option value="Homme">Homme</option>
+                                <option value="Femme">Femme</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group comments">
+                            <textarea class="form-control" id="raison" name="raison" placeholder="Raison de votre demande" required></textarea>
+                        </div>
+                        <div class="form-group full-width submit">
+                            <button type="submit" class="btn btn-theme btn-md btn-block">Envoyer ma demande</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -452,34 +400,30 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
+                            <img src="assets/img/logo.jpeg" alt="NEVUS AFRICA Logo">
                             <p>
-                                Happen active county. Winding morning am shyness evident to. Garrets because elderly new manners however one village she.
+                                NEVUS AFRICA accompagne les communautés à travers des actions éducatives, sociales et d’inclusion.
                             </p>
-                            <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> Subscribe</button>  
-                            </form>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-6 item">
                         <div class="f-item link">
-                            <h4 class="widget-title">Explore</h4>
+                            <h4 class="widget-title">Navigation</h4>
                             <ul>
                                 <li>
-                                    <a href="#">Nos actions</a>
+                                    <a href="index.html">Accueil</a>
                                 </li>
                                 <li>
-                                    <a href="#">New Campaign</a>
+                                    <a href="about-us.html">À propos de nous</a>
                                 </li>
                                 <li>
-                                    <a href="#">Site Map</a>
+                                    <a href="blog-3-colum.html">Nos activités</a>
                                 </li>
                                 <li>
-                                    <a href="#">Faire un don</a>
+                                    <a href="volunteer.html">Volontariat</a>
                                 </li>
                                 <li>
-                                    <a href="#">Terms</a>
+                                    <a href="contact.html">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -487,20 +431,20 @@
 
                     <div class="col-lg-3 col-md-6 item">
                         <div class="f-item">
-                            <h4 class="widget-title">Contact Info</h4>
+                            <h4 class="widget-title">Contact</h4>
                             <div class="address">
                                 <ul>
                                     <li>
-                                        <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
+                                        <strong>Adresse:</strong>
+                                        Alexima, NT 456678
                                     </li>
                                     <li>
                                         <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <a href="mailto:contact@nevusafrica.org">contact@nevusafrica.org</a>
                                     </li>
                                     <li>
                                         <strong>Téléphone:</strong>
-                                        <a href="tel:2151234567">+123 34598768</a>
+                                        <a href="tel:+242000000000">+242 000 000 000</a>
                                     </li>
                                 </ul>
                             </div>
@@ -509,14 +453,12 @@
 
                     <div class="col-lg-3 col-md-6 item">
                         <div class="f-item recent-post">
-                            <h4 class="widget-title">Latest News</h4>
+                            <h4 class="widget-title">À retenir</h4>
                             <div class="item">
-                                <a href="#">Delighted prevailed supported too not remainder perpetual.</a>
-                                <span><i class="fas fa-calendar-alt"></i> 22 Aug, 2020 -  <a href="#">Admin</a></span>
+                                <a href="blog-3-colum.html">Découvrez nos actions en cours et prochains événements.</a>
                             </div>
                             <div class="item">
-                                <a href="#">Speaking trifling an to unpacked moderate debating learnin management. </a>
-                                <span><i class="fas fa-calendar-alt"></i> 15 Nov, 2020 -  <a href="#">User</a></span>
+                                <a href="volunteer.html">Rejoignez la communauté des bénévoles et contribuez à nos missions.</a>
                             </div>
                         </div>
                     </div>
@@ -524,30 +466,15 @@
                 </div>
             </div>
         </div>
-        <!-- Start Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <p>Copyright &copy;  2025. Designed by <a href="#">validthemes</a></p>
-                    </div>
-                    <div class="col-lg-6 text-end link">
-                        <ul>
-                            <li>
-                                <a href="#">Terms</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#">Soutien</a>
-                            </li>
-                        </ul>
+                    <div class="col-lg-12 text-center">
+                        <p>© 2025 NEVUS AFRICA. Tous droits réservés.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End Footer Bottom -->
     </footer>
     <!-- End Footer -->
 
